@@ -7,10 +7,17 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".home"
     android:orientation="vertical"
-    android:weightSum="3"
+    android:weightSum="2.5"
+    android:background="@color/blue"
     tools:showIn="@layout/app_bar_home">
+   <android.support.v4.widget.Space
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight=".3"/>
+
 
    <LinearLayout
+       android:weightSum="2"
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="1">
@@ -20,25 +27,55 @@
           android:layout_gravity="center_vertical"
           android:layout_width="0dp"
           android:layout_weight="1"
-          android:id="@+id/img"
-          app:civ_border_width="2dp"
+          android:id="@+id/hospital"
           app:civ_border_color="#FF000000"
           android:layout_marginVertical="5dp"
-          android:src="@drawable/ic_launcher_background"
+          android:src="@drawable/hospital"
+          android:layout_height="match_parent" />
+
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_gravity="center_vertical"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:id="@+id/police"
+          app:civ_border_color="#FF000000"
+          android:layout_marginVertical="5dp"
+          android:src="@drawable/policestation"
           android:layout_height="match_parent" />
 
 </LinearLayout>
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="0dp"
-android:layout_weight="1">
 
-</LinearLayout>
 
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="0dp"
-android:layout_weight="1"></LinearLayout>
+   <LinearLayout
+       android:weightSum="2"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+
+
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_gravity="center_vertical"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:id="@+id/fire"
+          app:civ_border_color="#FF000000"
+          android:layout_marginVertical="5dp"
+          android:src="@drawable/firest"
+          android:layout_height="match_parent" />
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_gravity="center_vertical"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:id="@+id/ptpump"
+          app:civ_border_color="#FF000000"
+          android:layout_marginVertical="5dp"
+          android:src="@drawable/ptpump"
+          android:layout_height="match_parent" />
+
+   </LinearLayout>
+
 
 </LinearLayout>
 

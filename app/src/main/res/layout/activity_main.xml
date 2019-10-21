@@ -272,6 +272,8 @@ android:layout_marginRight="15dp"
     android:textAlignment="center"
     android:textColor="@android:color/white"
     android:text="Sign In"
+    android:clickable="true"
+    android:id="@+id/signin"
 
     android:autoSizeMaxTextSize="40sp"
     android:autoSizeMinTextSize="3sp"
