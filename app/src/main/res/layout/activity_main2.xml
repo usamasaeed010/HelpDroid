@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity"
+    android:weightSum="14"
+    >
+<android.support.v4.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3.7"/>
+
+
+    <LinearLayout
+        android:id="@+id/tL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/background2"
+android:weightSum="4"
+        android:orientation="horizontal"
+
+       >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeTextType="uniform"
+                android:text="Sign In"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+
+                />
+
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:id="@+id/signinline"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_weight=".1"
+                android:layout_marginBottom="3dp"
+                android:visibility="visible"
+                />
+
+
+
+        </LinearLayout>
+        <TextView
+
+            android:layout_marginVertical="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".02"
+            android:background="@android:color/black"/>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeTextType="uniform"
+                android:text="@string/sign_up"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+
+                tools:targetApi="o" />
+
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:id="@+id/signupline"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_weight=".1"
+                android:layout_marginBottom="3dp"
+                android:visibility="invisible"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<android.support.v4.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".5"/>
+<LinearLayout
+
+    android:layout_marginHorizontal="15dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:weightSum="5"
+    android:background="@drawable/background2">
+
+<android.support.v7.widget.AppCompatImageView
+    android:layout_width="0dp"
+    android:layout_weight="1"
+
+    android:layout_height="50dp"
+    android:src="@drawable/user"
+    android:layout_gravity="center_vertical"
+    />
+    <TextView
+        android:layout_marginVertical="5dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".01"
+        android:background="@android:color/black"/>
+    
+    
+    
+    <EditText
+        android:background="@android:color/transparent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.95"
+        android:hint="  User Name"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+/>
+
+
+
+</LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+    <LinearLayout
+android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:background="@drawable/background2">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="37dp"
+            android:src="@drawable/phone"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            android:background="@android:color/black"/>
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="  Phone"
+            android:textStyle="bold"
+
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+    <LinearLayout
+
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:background="@drawable/background2">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="50dp"
+            android:src="@drawable/email"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            android:background="@android:color/black"/>
+
+
+
+        <EditText
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.95"
+            android:hint="  Email Adress"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+    <LinearLayout
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:background="@drawable/background2">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="37dp"
+            android:src="@drawable/pass"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_marginVertical="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".01"
+            android:background="@android:color/black"/>
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="  Password"
+            android:textStyle="bold"
+
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginRight="15dp"
+            />
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".90"
+            android:text="show"
+            android:textAlignment="center"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="3sp"
+            android:autoSizeTextType="uniform"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"/>
+
+<LinearLayout
+    android:layout_marginTop="3dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:background="@drawable/backgroundbtn"
+    android:orientation="vertical">
+
+
+
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="0dp"
+
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textColor="@android:color/white"
+    android:text="Register"
+
+    android:autoSizeMaxTextSize="40sp"
+    android:autoSizeMinTextSize="3sp"
+    android:autoSizeTextType="uniform"
+    android:layout_weight="1"
+    tools:ignore="NestedWeights" />
+
+
+</LinearLayout>
+</LinearLayout>
