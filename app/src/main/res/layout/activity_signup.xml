@@ -64,7 +64,7 @@ android:weightSum="4"
                 android:background="@android:color/holo_blue_dark"
                 android:layout_weight=".1"
                 android:layout_marginBottom="3dp"
-                android:visibility="visible"
+                android:visibility="invisible"
                 />
 
 
@@ -110,6 +110,7 @@ android:weightSum="4"
 
 
             <ImageView
+
                 android:layout_gravity="center_horizontal"
                 android:layout_width="80dp"
                 android:layout_height="0dp"
@@ -117,7 +118,7 @@ android:weightSum="4"
                 android:background="@android:color/holo_blue_dark"
                 android:layout_weight=".1"
                 android:layout_marginBottom="3dp"
-                android:visibility="invisible"
+                android:visibility="visible"
                 />
 
 
