@@ -18,7 +18,7 @@ TextView textView;
 
     @Override
     public void onClick(View v) {
-       startActivity(new Intent(this,home.class));
+       startActivity(new Intent(this,messages.class));
 
     }
 }
