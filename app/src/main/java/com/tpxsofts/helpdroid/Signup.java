@@ -8,21 +8,29 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Signup extends AppCompatActivity implements View.OnClickListener {
-TextView buttonreg;
+    TextView buttonreg,buttonsignin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        buttonreg=findViewById(R.id.register);
+        buttonreg = findViewById(R.id.register);
         buttonreg.setOnClickListener(this);
+        buttonsignin = findViewById(R.id.signin);
+        buttonsignin.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-        case R.id.signin:   startActivity(new Intent(this,  Signup.class));          break;
+            case R.id.signin:
+                startActivity(new Intent(this, Signup.class));
+                break;
 
-     case R.id.register startActivity(new Intent(this, Signin.class));          break;
+            case R.id.register:
+                startActivity(new Intent(this, Signin.class));
+                break;
+        }
     }
 }

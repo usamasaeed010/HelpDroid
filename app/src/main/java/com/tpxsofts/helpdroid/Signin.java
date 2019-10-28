@@ -16,8 +16,6 @@ TextView signingo,signin,signup;
         signingo=findViewById(R.id.signingo);
         signingo.setOnClickListener(this);
 
-        signin=findViewById(R.id.signin);
-        signin.setOnClickListener(this);
 
         signup=findViewById(R.id.signup);
         signup.setOnClickListener(this);
