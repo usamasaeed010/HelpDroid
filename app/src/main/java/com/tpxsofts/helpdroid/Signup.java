@@ -20,6 +20,9 @@ TextView buttonreg;
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this, Signin.class));
+        switch (v.getId()) {
+        case R.id.signin:   startActivity(new Intent(this,  Signup.class));          break;
+
+     case R.id.register startActivity(new Intent(this, Signin.class));          break;
     }
 }

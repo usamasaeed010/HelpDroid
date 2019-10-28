@@ -36,6 +36,7 @@
         <activity android:name=".panicbutton" />
         <activity android:name=".Main3Activityprofile" />
         <activity android:name=".messages" />
+        <activity android:name=".Signup"/>
         <activity
             android:name=".home"
             android:label="@string/title_activity_home"

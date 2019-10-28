@@ -27,7 +27,6 @@ TextView signingo,signin,signup;
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.signingo: startActivity(new Intent(this, home.class));          break;
-            case R.id.signin:   startActivity(new Intent(this,  Signin.class));          break;
             case R.id.signup:   startActivity(new Intent(this,  Signup.class));          break;
 
 
