@@ -24,6 +24,8 @@ public class messages extends AppCompatActivity {
         dataarray.add(new MessagesDataForPopullation("Foji foundation","Cant, Lahore","11223"));
         dataarray.add(new MessagesDataForPopullation("services","Cant, Lahore","11223"));
         myadapterMessages=new MyadapterMessages(dataarray,this);
+
+
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setAdapter(myadapterMessages);
 

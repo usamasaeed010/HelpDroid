@@ -1,5 +1,6 @@
 package com.tpxsofts.helpdroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,10 +14,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.Toast;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class home extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
+    CircleImageView hospitalBTN,policestBTN,firestBTN,petrolpumpBTN;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +29,25 @@ public class home extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
+
+
+        hospitalBTN=findViewById(R.id.hospital);
+        hospitalBTN.setOnClickListener(this);
+
+        policestBTN=findViewById(R.id.police);
+        policestBTN.setOnClickListener(this);
+
+        firestBTN=findViewById(R.id.fire);
+        firestBTN.setOnClickListener(this);
+
+        petrolpumpBTN=findViewById(R.id.ptpump);
+        petrolpumpBTN.setOnClickListener(this);
+
+
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -75,22 +96,33 @@ public class home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 //
-//        if (id == R.id.nav_home) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_tools) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
+        if (id == R.id.profile) {
+            startActivity(new Intent(this,Main3Activityprofile.class));
+
+        } else if (id == R.id.panicbutton) {
+            startActivity(new Intent(this,panicbutton.class));
+
+        } else if (id == R.id.gfancing) {
+            Toast.makeText(getApplicationContext(),"not yet defined",Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.navChat) {
+            Toast.makeText(getApplicationContext(),"not yet defined",Toast.LENGTH_SHORT).show();
+
+        } else if (id == R.id.nav_share) {
+            Toast.makeText(getApplicationContext(),"not yet defined",Toast.LENGTH_SHORT).show();
+
+        } else if (id == R.id.abtus) {
+            Toast.makeText(getApplicationContext(),"not yet defined",Toast.LENGTH_SHORT).show();
+
+        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(this,hospital.class));
+
     }
 }
