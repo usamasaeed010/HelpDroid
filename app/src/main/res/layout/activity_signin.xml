@@ -7,7 +7,7 @@
     android:id="@+id/l1"
     android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context=".MainActivity"
+    tools:context=".Signin"
     android:weightSum="11"
     >
 <android.support.v4.widget.Space
@@ -41,6 +41,8 @@ android:weightSum="4"
                 android:layout_weight=".5"/>
 
             <TextView
+                android:clickable="true"
+                android:id="@+id/signin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -94,19 +96,19 @@ android:weightSum="4"
                 android:layout_weight=".5"/>
 
             <TextView
+                android:id="@+id/signup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:autoSizeMaxTextSize="30sp"
                 android:autoSizeMinTextSize="5sp"
                 android:autoSizeTextType="uniform"
                 android:text="@string/sign_up"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textStyle="bold"
-
-                tools:targetApi="o" />
+                android:textStyle="bold" />
 
 
             <ImageView
@@ -273,7 +275,7 @@ android:layout_marginRight="15dp"
     android:textColor="@android:color/white"
     android:text="Sign In"
     android:clickable="true"
-    android:id="@+id/signin"
+    android:id="@+id/signingo"
 
     android:autoSizeMaxTextSize="40sp"
     android:autoSizeMinTextSize="3sp"
