@@ -21,7 +21,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
-    CircleImageView hospitalBTN,policestBTN,firestBTN,petrolpumpBTN;
+    CircleImageView hospitalBTN,policestBTN,firestBTN,petrolpumpBTN,TPX;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
