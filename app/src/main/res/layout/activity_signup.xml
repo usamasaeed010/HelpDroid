@@ -161,6 +161,7 @@ android:weightSum="4"
     
     
     <EditText
+        android:id="@+id/usernamesignup"
         android:background="@android:color/transparent"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -211,9 +212,10 @@ android:layout_marginHorizontal="15dp"
         <EditText
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:hint="  Phone"
             android:textStyle="bold"
+            android:id="@+id/phnesignup"
 
             android:background="@android:color/transparent"
             android:textColor="@android:color/black"
@@ -259,6 +261,7 @@ android:layout_marginHorizontal="15dp"
 
 
         <EditText
+            android:id="@+id/emailsignup"
             android:background="@android:color/transparent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -312,7 +315,7 @@ android:layout_marginHorizontal="15dp"
             android:layout_weight="3"
             android:hint="  Password"
             android:textStyle="bold"
-
+android:id="@+id/passsignup"
             android:background="@android:color/transparent"
             android:textColor="@android:color/black"
             android:autoSizeMaxTextSize="20sp"
@@ -323,16 +326,17 @@ android:layout_marginHorizontal="15dp"
 
 
         <TextView
-            android:layout_gravity="center_vertical"
+            android:id="@+id/showsignup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight=".90"
-            android:text="show"
-            android:textAlignment="center"
             android:autoSizeMaxTextSize="20sp"
             android:autoSizeMinTextSize="3sp"
             android:autoSizeTextType="uniform"
-            android:textColor="@android:color/black"/>
+            android:text="show"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
 
