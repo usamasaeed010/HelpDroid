@@ -1,9 +1,13 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.tpxsofts.helpdroid.Adapter.MyadapterHospital;
+import com.tpxsofts.helpdroid.Model.HospitalDataForPopullation;
+import com.tpxsofts.helpdroid.R;
 
 import java.util.ArrayList;
 
@@ -15,6 +19,9 @@ public class hospital extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital);
+
+
+
         recyclerView= findViewById(R.id.rchospital);
         dataarray.add(new HospitalDataForPopullation("CMH","Cant, Lahore","11223"));
         dataarray.add(new HospitalDataForPopullation("Foji foundation","Cant, Lahore","11223"));

@@ -7,7 +7,7 @@
     android:id="@+id/l1"
     android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context=".Signin"
+    tools:context=".LoginSignUP.Signin"
     android:weightSum="11"
     >
 <android.support.v4.widget.Space

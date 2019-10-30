@@ -1,10 +1,13 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.LoginSignUP;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.tpxsofts.helpdroid.R;
+import com.tpxsofts.helpdroid.Activities.home;
 
 public class Signin extends AppCompatActivity implements View.OnClickListener {
 TextView signingo,signin,signup;

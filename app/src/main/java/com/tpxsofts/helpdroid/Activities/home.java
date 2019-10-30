@@ -1,9 +1,7 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Toast;
+
+import com.tpxsofts.helpdroid.Panic.panicbutton;
+import com.tpxsofts.helpdroid.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -97,10 +98,10 @@ public class home extends AppCompatActivity
         int id = item.getItemId();
 //
         if (id == R.id.profile) {
-            startActivity(new Intent(this,Main3Activityprofile.class));
+            startActivity(new Intent(this, Main3Activityprofile.class));
 
         } else if (id == R.id.panicbutton) {
-            startActivity(new Intent(this,panicbutton.class));
+            startActivity(new Intent(this, panicbutton.class));
 
         } else if (id == R.id.gfancing) {
             Toast.makeText(getApplicationContext(),"not yet defined",Toast.LENGTH_SHORT).show();
@@ -122,7 +123,7 @@ public class home extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
-        startActivity(new Intent(this,hospital.class));
+        startActivity(new Intent(this, hospital.class));
 
     }
 }

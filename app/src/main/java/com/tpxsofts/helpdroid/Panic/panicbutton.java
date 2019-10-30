@@ -1,10 +1,12 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Panic;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.tpxsofts.helpdroid.R;
 
 public class panicbutton extends AppCompatActivity implements View.OnClickListener {
     TextView pushtxt;

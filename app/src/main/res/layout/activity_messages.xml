@@ -8,7 +8,7 @@ android:background="@android:color/white"
     android:weightSum="6"
     android:orientation="vertical"
 
-    tools:context=".hospital">
+    tools:context=".Activities.hospital">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

@@ -1,9 +1,15 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.tpxsofts.helpdroid.Adapter.MyadapterMessages;
+import com.tpxsofts.helpdroid.Adapter.MyadapterMessagesnotification;
+import com.tpxsofts.helpdroid.Model.MessagesDataForPopullation;
+import com.tpxsofts.helpdroid.Model.MessagesnotificationDataForPopullation;
+import com.tpxsofts.helpdroid.R;
 
 import java.util.ArrayList;
 
@@ -17,6 +23,10 @@ public class messages extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messages);
+
+
+
+
         recyclerView= findViewById(R.id.Rcmessage);
         recyclergridView= findViewById(R.id.gridmessage);
         // dummy data to populate message class

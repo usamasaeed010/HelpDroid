@@ -1,10 +1,12 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.tpxsofts.helpdroid.R;
 
 public class Main3Activityprofile extends AppCompatActivity implements View.OnClickListener {
 TextView saveBTN,editBtn;

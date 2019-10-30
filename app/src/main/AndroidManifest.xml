@@ -8,6 +8,8 @@
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -30,25 +32,25 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".Map_Activities.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".hospital" />
-        <activity android:name=".panicbutton" />
-        <activity android:name=".Main3Activityprofile" />
-        <activity android:name=".messages" />
-        <activity android:name=".Signup"/>
+        <activity android:name=".Activities.hospital" />
+        <activity android:name=".Panic.panicbutton" />
+        <activity android:name=".Activities.Main3Activityprofile" />
+        <activity android:name=".Activities.messages" />
+        <activity android:name=".LoginSignUP.Signup"/>
         <activity
-            android:name=".home"
+            android:name=".Activities.home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".splash">
+        <activity android:name=".SplashActivity.splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Signin">
+        <activity android:name=".LoginSignUP.Signin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

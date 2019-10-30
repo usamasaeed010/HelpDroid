@@ -1,11 +1,9 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Model;
 
 public class MessagesDataForPopullation {
-    String Name;
-    String Message;
-    String Time;
-    int Pic;
-    String notification;
+   public String Name;
+    public String Message;
+    public String Time;
 
     public MessagesDataForPopullation(String name, String message, String time) {
         Name = name;

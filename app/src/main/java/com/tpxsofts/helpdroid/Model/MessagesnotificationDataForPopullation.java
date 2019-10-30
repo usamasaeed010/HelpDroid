@@ -1,8 +1,8 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Model;
 
 public class MessagesnotificationDataForPopullation {
 
-    int Pic;
+    public int Pic;
     public MessagesnotificationDataForPopullation( int Pic) {
 
         this.Pic=Pic;

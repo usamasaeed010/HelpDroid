@@ -1,4 +1,4 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Map_Activities;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.tpxsofts.helpdroid.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

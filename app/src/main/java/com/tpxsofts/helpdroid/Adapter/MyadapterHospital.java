@@ -1,4 +1,4 @@
-package com.tpxsofts.helpdroid;
+package com.tpxsofts.helpdroid.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.tpxsofts.helpdroid.Model.HospitalDataForPopullation;
+import com.tpxsofts.helpdroid.R;
 
 import java.util.ArrayList;
 

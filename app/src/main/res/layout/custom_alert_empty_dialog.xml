@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:text="No Internet Access"
+    android:gravity="center"
+    android:id="@+id/msg"
+    android:textColor="#222"
+    android:textStyle="bold"
+    android:textSize="16dp"
+    android:layout_height="100dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="ok"
+        android:textColor="#fff"
+        android:id="@+id/ok"
+        android:background="#2196F3"
+        android:layout_height="wrap_content" />
+</LinearLayout>
