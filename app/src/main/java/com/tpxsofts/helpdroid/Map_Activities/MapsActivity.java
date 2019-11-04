@@ -1,19 +1,27 @@
 package com.tpxsofts.helpdroid.Map_Activities;
 
-import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
+import android.location.Location;
 
+import androidx.fragment.app.FragmentActivity;
+import android.os.Bundle;
+import android.widget.Toast;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.tpxsofts.helpdroid.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    LatLng currentLocation;
+    FusedLocationProviderClient fusedLocationProviderClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +32,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
+
+
 
 
     /**
@@ -39,9 +49,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        fusedLocationProviderClient= LocationServices.getFusedLocationProviderClient(this);
+        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if(location!=null){
+
+                    currentLocation=new LatLng(location.getLatitude(),location.getLongitude());
+
+
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                    Toast.makeText(getApplicationContext(),String.valueOf(currentLocation),Toast.LENGTH_SHORT).show();
+
+                    mMap.setMyLocationEnabled(true);
+        mMap.addMarker(new MarkerOptions().position(currentLocation).title("My Location"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(currentLocation));
+
+                }
+                else {
+
+                    Toast.makeText(getApplicationContext(),"Turn onn Location ",Toast.LENGTH_SHORT).show();
+
+
+                }
+            }
+        });
+
     }
 }

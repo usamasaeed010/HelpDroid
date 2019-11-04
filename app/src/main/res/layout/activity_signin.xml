@@ -10,7 +10,7 @@
     tools:context=".LoginSignUP.Signin"
     android:weightSum="11"
     >
-<android.support.v4.widget.Space
+<androidx.legacy.widget.Space
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="4.5"/>
@@ -35,7 +35,7 @@ android:weightSum="4"
             android:orientation="vertical"
             >
 
-            <android.support.v4.widget.Space
+            <androidx.legacy.widget.Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".5"/>
@@ -89,7 +89,7 @@ android:weightSum="4"
             android:orientation="vertical"
             >
 
-            <android.support.v4.widget.Space
+            <androidx.legacy.widget.Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight=".5"/>
@@ -127,7 +127,7 @@ android:weightSum="4"
 
 
     </LinearLayout>
-<android.support.v4.widget.Space
+<androidx.legacy.widget.Space
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight=".5"/>
@@ -141,7 +141,7 @@ android:weightSum="4"
     android:weightSum="5"
     android:background="@drawable/background2">
 
-<android.support.v7.widget.AppCompatImageView
+<androidx.appcompat.widget.AppCompatImageView
     android:layout_width="0dp"
     android:layout_weight="1"
 
@@ -176,7 +176,7 @@ android:weightSum="4"
 </LinearLayout>
 
 
-    <android.support.v4.widget.Space
+    <androidx.legacy.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".5"/>
@@ -189,7 +189,7 @@ android:layout_marginHorizontal="15dp"
         android:weightSum="5"
         android:background="@drawable/background2">
 
-        <android.support.v7.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="0dp"
             android:layout_weight="1"
 
@@ -249,7 +249,7 @@ android:layout_marginRight="15dp"
         android:textColor="@android:color/black"/>
 
 
-    <android.support.v4.widget.Space
+    <androidx.legacy.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".5"/>

@@ -4,7 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
@@ -12,10 +12,6 @@ import android.widget.ProgressBar;
 import com.tpxsofts.helpdroid.Activities.home;
 import com.tpxsofts.helpdroid.Model.NetworkConnection;
 import com.tpxsofts.helpdroid.R;
-import com.tpxsofts.helpdroid.LoginSignUP.Signin;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 import static android.view.View.VISIBLE;
 
