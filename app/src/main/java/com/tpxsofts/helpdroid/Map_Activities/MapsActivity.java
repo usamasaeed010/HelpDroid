@@ -1,5 +1,7 @@
 package com.tpxsofts.helpdroid.Map_Activities;
 
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 
 import androidx.fragment.app.FragmentActivity;
@@ -17,12 +19,17 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.tpxsofts.helpdroid.R;
 
+import java.io.IOException;
+import java.util.List;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     LatLng currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
-
+    Geocoder geocoder=new Geocoder(this);
+    List<Address> listofadress;
+    Address addressobj;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +65,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     currentLocation=new LatLng(location.getLatitude(),location.getLongitude());
 
 
-        // Add a marker in Sydney and move the camera
+                    // Add a marker in Sydney and move the camera
                     Toast.makeText(getApplicationContext(),String.valueOf(currentLocation),Toast.LENGTH_SHORT).show();
                     mMap.clear();
                     mMap.setMyLocationEnabled(true);
@@ -71,8 +78,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     mMap.getUiSettings().setAllGesturesEnabled(true);
                     mMap.getUiSettings().setMyLocationButtonEnabled(true);
                     mMap.setMaxZoomPreference(20);
-                    mMap.addMarker(new MarkerOptions().position(currentLocation).title("My Location"));
+
+
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(currentLocation));
+                    try {
+                        listofadress=geocoder.getFromLocation(currentLocation.latitude,currentLocation.longitude,3);
+                        addressobj=listofadress.get(0);
+
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    mMap.addMarker(new MarkerOptions()
+                            .position(currentLocation)
+                            .title("My Location")
+                            .snippet(addressobj.getAdminArea()+"\n"+addressobj.getCountryName()+"\n"+addressobj.getLocality()));
 
                 }
                 else {
