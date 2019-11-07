@@ -27,7 +27,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     LatLng currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
-    Geocoder geocoder=new Geocoder(this);
+    Geocoder geocoder=new Geocoder(getApplicationContext());
     List<Address> listofadress;
     Address addressobj;
     @Override
