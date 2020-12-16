@@ -39,6 +39,7 @@ EditText email,phone,name;
     Uri uri;
     File file;
   String  chk;
+
   ProgressDialog progressDialog;
 String Gender,SecendaryPhone,ScendaryEmail,Name;
     @Override
