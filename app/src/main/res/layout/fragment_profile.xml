@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundnaviga"
+    android:weightSum="3"
+    >
+
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"/>
+    <ImageView
+        android:id="@+id/dpuser"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/male"/>
+
+    <androidx.legacy.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".1"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/background5"
+    android:weightSum="8.5"
+    android:layout_marginHorizontal="10dp"
+    android:layout_weight="1.5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.legacy.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+
+
+
+    <LinearLayout
+
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:background="@android:color/transparent">
+        <LinearLayout
+
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:weightSum="5"
+            android:background="@android:color/transparent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:id="@+id/namefrag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black" />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight=".01"
+            />
+    </LinearLayout>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+
+    <LinearLayout
+
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:weightSum="5"
+            android:background="@android:color/transparent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="50dp"
+                android:src="@drawable/email"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:id="@+id/emalfrag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_weight="4.3"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black" />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/colorAccent"
+            android:layout_weight=".01"/>
+    </LinearLayout>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+
+    <LinearLayout
+
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_marginHorizontal="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:weightSum="5"
+
+            android:background="@android:color/transparent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="37dp"
+                android:src="@drawable/phone"
+                android:layout_gravity="center_vertical"
+                />
+
+
+            <TextView
+                android:id="@+id/phonefrag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="4.2"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black" />
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight=".01"/>
+    </LinearLayout>
+
+
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"/>
+    <LinearLayout
+
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:weightSum="5"
+        android:background="@android:color/transparent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="37dp"
+            android:src="@drawable/gender"
+            android:layout_gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:id="@+id/genderfrag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_weight="4.3"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/colorAccent"
+            android:layout_weight=".01"/>
+    </LinearLayout>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"/>
+
+<LinearLayout
+    android:layout_marginTop="3dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:background="@drawable/backgroundbtn"
+    android:orientation="vertical">
+
+
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="0dp"
+android:background="@drawable/backgroundbtn"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textColor="@android:color/white"
+    android:text="Edit"
+android:id="@+id/editprf"
+    android:autoSizeMaxTextSize="20sp"
+    android:autoSizeMinTextSize="3sp"
+    android:autoSizeTextType="uniform"
+    android:layout_weight=".4"
+    tools:ignore="NestedWeights" />
+
+
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

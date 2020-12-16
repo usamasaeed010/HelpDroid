@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundnaviga"
+    tools:context=".Activities.ActivityToShowSpecificClickedData">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/backgroundnaviga"
+        android:layout_weight=".02"
+        android:weightSum="1">
+      <ImageView
+          android:layout_gravity="center_vertical"
+          android:layout_width="0dp"
+          android:rotation="180"
+          android:layout_weight=".2"
+          android:layout_height="30dp"
+          android:id="@+id/img"
+          android:src="@drawable/arrow"
+          />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:textSize="30sp"
+            android:id="@+id/bar"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rchospital"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".95" />
+
+
+
+    <TextView
+
+
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_cloud_off_black"
+        android:gravity="center"
+        android:text="No Near By Places Found "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:visibility="gone"
+
+        />
+
+
+
+</LinearLayout>

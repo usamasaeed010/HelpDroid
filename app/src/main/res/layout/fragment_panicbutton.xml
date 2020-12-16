@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundnaviga"
+    android:weightSum="4"
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        />
+
+    <TextView
+android:id="@+id/pushtxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:text="----------Push----------"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/colorAccent"
+        android:autoSizeMaxTextSize="30sp"
+        android:autoSizeMinTextSize="5sp"
+        />
+    <ImageView
+
+        android:id="@+id/pushbutton"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:src="@drawable/grnpanic"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/alrm"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alaram is off"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/White"
+        android:autoSizeMaxTextSize="20sp"
+        />
+</LinearLayout>

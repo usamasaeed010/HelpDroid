@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@android:color/white"
+    android:weightSum="6"
+    android:orientation="vertical">
+
+<androidx.legacy.widget.Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight=".1"
+        android:textSize="20sp"
+        android:text="Online Users"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:elevation="5dp"
+        android:id="@+id/gridmessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:textSize="20sp"
+            android:text=" Recently"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:elevation="3dp"
+            android:background="@android:color/white"
+            android:layout_weight=".5"
+            android:weightSum=".5">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search_black_24dp"
+                />
+            <EditText
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:textSize="20sp"
+                android:background="@android:color/transparent"
+                android:hint="Serach"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rcmessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2" />
+
+</LinearLayout>

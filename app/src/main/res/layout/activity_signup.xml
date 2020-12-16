@@ -6,134 +6,18 @@
     android:layout_height="match_parent"
     android:id="@+id/l1"
     android:orientation="vertical"
-    android:background="@drawable/background"
-    tools:context=".LoginSignUP.Signin"
+    android:background="@drawable/backgroundlogin"
+    tools:context=".LoginSignUPForgepassANDVerificatiom.Signin"
     android:weightSum="14"
     >
 <androidx.legacy.widget.Space
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:layout_weight="3.7"/>
+    android:layout_weight="4"/>
 
 
-    <LinearLayout
-        android:id="@+id/tL"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_weight="1"
-        android:background="@drawable/background2"
-android:weightSum="4"
-        android:orientation="horizontal"
-
-       >
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:weightSum="2"
-            android:layout_weight="2"
-            android:orientation="vertical"
-            >
-
-            <androidx.legacy.widget.Space
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".5"/>
-
-            <TextView
-                android:clickable="true"
-
-                android:id="@+id/signin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:autoSizeMaxTextSize="30sp"
-                android:autoSizeMinTextSize="5sp"
-                android:autoSizeTextType="uniform"
-                android:text="Sign In"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textStyle="bold"
-
-                />
-
-
-            <ImageView
-                android:layout_gravity="center_horizontal"
-                android:layout_width="80dp"
-                android:layout_height="0dp"
-                android:id="@+id/signinline"
-                android:background="@android:color/holo_blue_dark"
-                android:layout_weight=".1"
-                android:layout_marginBottom="3dp"
-                android:visibility="invisible"
-                />
-
-
-
-        </LinearLayout>
-        <TextView
-
-            android:layout_marginVertical="5dp"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight=".02"
-            android:background="@android:color/black"/>
-
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:weightSum="2"
-            android:layout_weight="2"
-            android:orientation="vertical"
-            >
-
-            <androidx.legacy.widget.Space
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".5"/>
-
-            <TextView
-                android:clickable="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:autoSizeMaxTextSize="30sp"
-                android:autoSizeMinTextSize="5sp"
-                android:autoSizeTextType="uniform"
-                android:text="@string/sign_up"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textStyle="bold" />
-
-
-            <ImageView
-
-                android:layout_gravity="center_horizontal"
-                android:layout_width="80dp"
-                android:layout_height="0dp"
-                android:id="@+id/signupline"
-                android:background="@android:color/holo_blue_dark"
-                android:layout_weight=".1"
-                android:layout_marginBottom="3dp"
-                android:visibility="visible"
-                />
-
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-<androidx.legacy.widget.Space
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight=".5"/>
 <LinearLayout
+    android:elevation="5dp"
 
     android:layout_marginHorizontal="15dp"
     android:orientation="horizontal"
@@ -141,7 +25,7 @@ android:weightSum="4"
     android:layout_height="0dp"
     android:layout_weight="1"
     android:weightSum="5"
-    android:background="@drawable/background2">
+    android:background="@drawable/backgroundedittext">
 
 <androidx.appcompat.widget.AppCompatImageView
     android:layout_width="0dp"
@@ -167,9 +51,8 @@ android:weightSum="4"
         android:layout_height="match_parent"
         android:layout_weight="3.95"
         android:hint="  User Name"
-        android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMaxTextSize="15sp"
         android:autoSizeMinTextSize="10sp"
         android:autoSizeTextType="uniform"
 />
@@ -184,13 +67,15 @@ android:weightSum="4"
         android:layout_height="0dp"
         android:layout_weight=".5"/>
     <LinearLayout
-android:layout_marginHorizontal="15dp"
+        android:elevation="5dp"
+
+        android:layout_marginHorizontal="15dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="5"
-        android:background="@drawable/background2">
+        android:background="@drawable/backgroundedittext">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="0dp"
@@ -213,13 +98,13 @@ android:layout_marginHorizontal="15dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:hint="  Phone"
-            android:textStyle="bold"
+            android:hint="  03xxxxxxxxx"
+            android:inputType="phone"
             android:id="@+id/phnesignup"
 
             android:background="@android:color/transparent"
             android:textColor="@android:color/black"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:layout_marginRight="15dp"
@@ -234,6 +119,7 @@ android:layout_marginHorizontal="15dp"
         android:layout_height="0dp"
         android:layout_weight=".5"/>
     <LinearLayout
+        android:elevation="5dp"
 
         android:layout_marginHorizontal="15dp"
         android:orientation="horizontal"
@@ -241,7 +127,7 @@ android:layout_marginHorizontal="15dp"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="5"
-        android:background="@drawable/background2">
+        android:background="@drawable/backgroundedittext">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="0dp"
@@ -265,11 +151,11 @@ android:layout_marginHorizontal="15dp"
             android:background="@android:color/transparent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
             android:layout_weight="3.95"
             android:hint="  Email Adress"
-            android:textStyle="bold"
             android:textColor="@android:color/black"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             />
@@ -284,13 +170,15 @@ android:layout_marginHorizontal="15dp"
         android:layout_height="0dp"
         android:layout_weight=".5"/>
     <LinearLayout
+        android:elevation="5dp"
+
         android:layout_marginHorizontal="15dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:weightSum="5"
-        android:background="@drawable/background2">
+        android:background="@drawable/backgroundedittext">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="0dp"
@@ -314,11 +202,11 @@ android:layout_marginHorizontal="15dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:hint="  Password"
-            android:textStyle="bold"
-android:id="@+id/passsignup"
+            android:inputType="textPassword"
+            android:id="@+id/passsignup"
             android:background="@android:color/transparent"
             android:textColor="@android:color/black"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMaxTextSize="15sp"
             android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
             android:layout_marginRight="15dp"
@@ -326,7 +214,7 @@ android:id="@+id/passsignup"
 
 
         <TextView
-            android:id="@+id/showsignup"
+            android:id="@+id/showsignuppass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -340,39 +228,71 @@ android:id="@+id/passsignup"
     </LinearLayout>
 
 
+
+
+
     <androidx.legacy.widget.Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight=".7"/>
-
-<LinearLayout
-    android:layout_marginTop="3dp"
-    android:layout_gravity="center"
-    android:layout_width="wrap_content"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:clickable="true"
-    android:background="@drawable/backgroundbtn"
-    android:orientation="vertical">
+        android:layout_weight="1"/>
 
 
 
-<TextView
-    android:layout_width="200dp"
-    android:layout_height="0dp"
-android:clickable="true"
-    android:id="@+id/register"
-    android:textStyle="bold"
-    android:textAlignment="center"
-    android:textColor="@android:color/white"
-    android:text="Register"
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:background="@drawable/backgroundbtn"
 
-    android:autoSizeMaxTextSize="40sp"
-    android:autoSizeMinTextSize="3sp"
-    android:autoSizeTextType="uniform"
-    android:layout_weight="1"
-    tools:ignore="NestedWeights" />
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Sign Up"
+        android:clickable="true"
+        android:id="@+id/signup"
+
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="3sp"
+        android:autoSizeTextType="uniform"
+        tools:ignore="NestedWeights" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"/>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text=" Already have an account ?"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeMinTextSize="3sp"
+            android:autoSizeTextType="uniform"
+            android:layout_gravity="center_vertical"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/TextSignin"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight=".4   "
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="3sp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/></LinearLayout>
 
 
-</LinearLayout>
 </LinearLayout>

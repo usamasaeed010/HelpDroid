@@ -1,353 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/l1"
     android:orientation="vertical"
-    android:background="@color/blue"
-    tools:context=".LoginSignUP.Signin"
-    android:weightSum="3"
-    >
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".4"
-        android:weightSum="1">
-        <ImageView
-            android:src="@drawable/arrow"
-            android:rotation="180"
-            android:layout_marginLeft="8dp"
-            android:layout_width="0dp"
-            android:layout_weight=".09"
-            android:layout_height="40dp"
-            android:id="@+id/arroow"
-            />
+    android:background="@drawable/backgroundnaviga"
+    android:layout_weight="2">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight=".8"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:text="Home"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-    <androidx.legacy.widget.Space
+
+
+    <ImageView
+        android:id="@+id/dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:visibility="invisible"
+        android:layout_height="0dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight=".2"/>
+    <Button
+        android:layout_marginVertical="15dp"
+        android:id="@+id/uplodpic"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/backgroundtvcorners"
         android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeTextType="uniform"
+        android:text="Uplod Picture"
         android:layout_height="0dp"
         android:layout_weight=".1"/>
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="0dp"
-        android:layout_weight=".5"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/male"/>
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight=".2"
-    android:text=" User Name"
-android:textAlignment="center"
-    android:textStyle="bold"
-    android:autoSizeMaxTextSize="30sp"
-    android:autoSizeMinTextSize="3sp"
-    android:autoSizeTextType="uniform"/>
-    <androidx.legacy.widget.Space
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight=".3"/>
-
-<LinearLayout
-    android:orientation="vertical"
-    android:background="@drawable/background5"
-    android:weightSum="8.5"
-    android:layout_weight="1.5"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-<androidx.legacy.widget.Space
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"/>
-
-
-
 
     <LinearLayout
-
-        android:layout_marginHorizontal="15dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:weightSum="1"
-        android:background="@drawable/background2">
-        <LinearLayout
-
-            android:layout_marginHorizontal="15dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".9"
-            android:weightSum="5"
-            android:background="@drawable/background2">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-
-                android:layout_height="50dp"
-                android:src="@drawable/user"
-                android:layout_gravity="center_vertical"
-                />
-
-
-            <EditText
-                android:background="@android:color/transparent"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3.95"
-                android:hint="  User Name"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:autoSizeMaxTextSize="20sp"
-                android:autoSizeMinTextSize="10sp"
-                android:autoSizeTextType="uniform"
-                />
-
-
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@android:color/black"
-
-            android:layout_marginHorizontal="15dp"
-            android:layout_weight=".01"
-            />
-    </LinearLayout>
-
-    <androidx.legacy.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".5"/>
-
-    <LinearLayout
-
-        android:layout_marginHorizontal="15dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="1"
-        android:background="@drawable/background2">
-
-        <LinearLayout
-
-            android:layout_marginHorizontal="15dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".9"
-            android:weightSum="5"
-            android:background="@drawable/background2">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-
-                android:layout_height="50dp"
-                android:src="@drawable/email"
-                android:layout_gravity="center_vertical"
-                />
-
-
-
-            <EditText
-                android:background="@android:color/transparent"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3.95"
-                android:hint="  Email Adress"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"
-                android:autoSizeMaxTextSize="20sp"
-                android:autoSizeMinTextSize="10sp"
-                android:autoSizeTextType="uniform"
-                />
-
-
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-
-            android:layout_marginHorizontal="15dp"
-            android:background="@android:color/black"
-            android:layout_weight=".01"/>
-    </LinearLayout>
-
-    <androidx.legacy.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".5"/>
-
-    <LinearLayout
-
-        android:layout_marginHorizontal="15dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="1"
-        android:background="@drawable/background2">
-
-        <LinearLayout
-            android:layout_marginHorizontal="15dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".9"
-            android:weightSum="5"
-            android:background="@drawable/background2">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="0dp"
-                android:layout_weight="1"
-
-                android:layout_height="37dp"
-                android:src="@drawable/phone"
-                android:layout_gravity="center_vertical"
-                />
-
-
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="4"
-                android:hint="  Phone"
-                android:textStyle="bold"
-
-                android:background="@android:color/transparent"
-                android:textColor="@android:color/black"
-                android:autoSizeMaxTextSize="20sp"
-                android:autoSizeMinTextSize="10sp"
-                android:autoSizeTextType="uniform"
-                android:layout_marginRight="15dp"
-                />
-
-
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@android:color/black"
-
-            android:layout_marginHorizontal="15dp"
-            android:layout_weight=".01"/>
-    </LinearLayout>
-
-
-
-    <androidx.legacy.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".5"/>
-    <LinearLayout
-
-        android:layout_marginHorizontal="15dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:weightSum="1"
-        android:background="@drawable/background2">
-    <LinearLayout
-        android:layout_marginHorizontal="15dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".9"
-        android:weightSum="5"
-        android:background="@drawable/background2">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-
-            android:layout_height="37dp"
-            android:src="@drawable/gender"
-            android:layout_gravity="center_vertical"
-            />
-
-
+        android:weightSum="6">
 
         <EditText
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:hint="  Gender"
-            android:textStyle="bold"
 
-            android:background="@android:color/transparent"
-            android:textColor="@android:color/black"
-            android:autoSizeMaxTextSize="20sp"
-            android:autoSizeMinTextSize="10sp"
-            android:autoSizeTextType="uniform"
-            android:layout_marginRight="15dp"
-            />
-
-
-    </LinearLayout>
-
-        <TextView
+            android:id="@+id/namefrag"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:inputType="text"
+            android:background="@drawable/backgroundtvcorners"
+            android:hint="   Name"
+            android:textColorHint="@android:color/black"
+            android:textStyle="bold" />
+        <androidx.legacy.widget.Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight=".3"/>
 
-            android:layout_marginHorizontal="15dp"
-            android:background="@android:color/black"
-            android:layout_weight=".01"/>
+        <LinearLayout
+
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/backgroundtvcorners"
+            android:layout_weight="2"
+            android:weightSum="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:text="   select Gender"
+                android:autoSizeTextType="uniform"
+                android:textColor="@android:color/black"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeMaxTextSize="25sp"/>
+
+            <LinearLayout
+
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/white"
+                android:layout_weight="3"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/male"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/male" />
+
+                <ImageView
+                    android:id="@+id/female"
+                    android:layout_width="0dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/female1" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/white"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/maletxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeTextType="uniform"
+                    android:clickable="true"
+                    android:text="Male"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/femaletxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeTextType="uniform"
+                    android:clickable="true"
+                    android:text="Female"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+        <EditText
+            android:id="@+id/secondaryEmail"
+            android:background="@drawable/backgroundtvcorners"
+            android:layout_width="match_parent"
+            android:hint="  Secondary Email:"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColorHint="@android:color/black"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="50dp" />
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+        <EditText
+            android:background="@drawable/backgroundtvcorners"
+            android:layout_width="match_parent"
+            android:hint="   Phone No: 03123456789"
+            android:textStyle="bold"
+            android:inputType="phone"
+            android:textColorHint="@android:color/black"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="50dp"
+            android:id="@+id/secondarPhone"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+android:id="@+id/saved"
+
+android:background="@drawable/backgroundbtn"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            android:clickable="true"
+
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="3sp"
+            android:autoSizeTextType="uniform"
+            android:layout_weight=".8" />
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+
     </LinearLayout>
-    <androidx.legacy.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".7"/>
 
-<LinearLayout
-    android:layout_marginTop="3dp"
-    android:layout_gravity="center"
-    android:layout_width="wrap_content"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:clickable="true"
-    android:background="@drawable/backgroundbtn"
-    android:orientation="vertical">
+    </LinearLayout>
 
-
-
-<TextView
-    android:layout_width="200dp"
-    android:layout_height="0dp"
-
-    android:textStyle="bold"
-    android:textAlignment="center"
-    android:textColor="@android:color/white"
-    android:text="Save"
-
-    android:autoSizeMaxTextSize="40sp"
-    android:autoSizeMinTextSize="3sp"
-    android:autoSizeTextType="uniform"
-    android:layout_weight="1"
-    tools:ignore="NestedWeights" />
-
-
-</LinearLayout>
-</LinearLayout>
-</LinearLayout>

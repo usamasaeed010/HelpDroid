@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundtvcorners"
+android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="5dp"
+>
+<LinearLayout
+android:layout_marginBottom="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:weightSum="2">
+
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight=".5"
+    android:src="@drawable/fak"
+    />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1.5"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:weightSum="2"
+    >
+
+    <TextView
+        android:id="@+id/HName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Hsopital Name"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="5sp"
+/>
+    <TextView
+        android:id="@+id/Hadress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Hsopital Adresss"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="15sp"
+        android:autoSizeMinTextSize="5sp"
+        />
+
+
+
+</LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+      >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/transparent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/Hcall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:src="@drawable/phone"
+                />
+            <TextView
+                android:id="@+id/phonec"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/black"/>
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".001"
+                android:background="@android:color/black"/>
+
+
+            <TextView
+                android:id="@+id/locationc"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/black"/>
+            <ImageView
+                android:id="@+id/directionx"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:src="@drawable/ltn"
+                />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
